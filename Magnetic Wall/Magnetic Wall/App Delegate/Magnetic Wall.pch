@@ -1,0 +1,28 @@
+//
+//  Fresh Wall.pch
+//  Fresh Wall
+//
+//  Created by 肖坚伟 on 16/4/9.
+//  Copyright © 2016年 轻舟. All rights reserved.
+//
+
+#ifndef Fresh_Wall_pch
+#define Fresh_Wall_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define API_TABLE @"data"
+#define API_KEY @"images"
+
+#define IMGNUM @"85"
+#define IMGNAME @"http://7xsqrf.com2.z0.glb.clouddn.com/pic%ld.jpeg_thumbnails"
+
+#endif /* Fresh_Wall_pch */
