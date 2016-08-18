@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A04CC611D6551CD009FDABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AD1DD1CB8BB45007938FA /* AppDelegate.m */; };
+		6A04CC941D656207009FDABB /* MobAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7AD1EE1CB8CE6D007938FA /* MobAPI.framework */; };
 		6A1AD2641CE37C040017E721 /* MJDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AD2631CE37C040017E721 /* MJDIYHeader.m */; };
 		6A1AD2761CE37C4F0017E721 /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AD2681CE37C4F0017E721 /* DGActivityIndicatorDoubleBounceAnimation.m */; };
 		6A1AD2771CE37C4F0017E721 /* DGActivityIndicatorFiveDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AD26A1CE37C4F0017E721 /* DGActivityIndicatorFiveDotsAnimation.m */; };
@@ -21,14 +23,12 @@
 		6A1ECCF21CE62D1500AF0955 /* MWActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1ECCF11CE62D1500AF0955 /* MWActivity.m */; };
 		6A32E7C51CE05BCE00396452 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A32E7C41CE05BCE00396452 /* Reachability.m */; };
 		6A32E7C71CE05BEB00396452 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A32E7C61CE05BEB00396452 /* SystemConfiguration.framework */; };
-		6A3DA76D1D64086A00DF0E02 /* MobAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7AD1EE1CB8CE6D007938FA /* MobAPI.framework */; };
 		6A4151521CDA4BB4004015B4 /* UIImage+ClipSubImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4151511CDA4BB4004015B4 /* UIImage+ClipSubImage.m */; };
 		6A4151581CDAE3E7004015B4 /* OptionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4151561CDAE3E7004015B4 /* OptionViewCell.m */; };
 		6A4151591CDAE3E7004015B4 /* OptionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4151571CDAE3E7004015B4 /* OptionViewCell.xib */; };
 		6A71CB701CD0C5AB00E6280E /* SFFocusViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A71CB6F1CD0C5AB00E6280E /* SFFocusViewLayout.m */; };
 		6A7AD1C51CB8AB65007938FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AD1C41CB8AB65007938FA /* main.m */; };
 		6A7AD1D01CB8AB65007938FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7AD1CF1CB8AB65007938FA /* Assets.xcassets */; };
-		6A7AD1E21CB8BB45007938FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AD1DD1CB8BB45007938FA /* AppDelegate.m */; };
 		6A7AD1EB1CB8BCDD007938FA /* XViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AD1E91CB8BCDD007938FA /* XViewController.m */; };
 		6A7AD1EC1CB8BCDD007938FA /* XViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A7AD1EA1CB8BCDD007938FA /* XViewController.xib */; };
 		6A7AD1F31CB8CEA0007938FA /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7AD1F21CB8CEA0007938FA /* libicucore.tbd */; };
@@ -147,7 +147,7 @@
 		6A7AD1E81CB8BCDD007938FA /* XViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XViewController.h; path = MainPageController/Controller/XViewController.h; sourceTree = "<group>"; };
 		6A7AD1E91CB8BCDD007938FA /* XViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XViewController.m; path = MainPageController/Controller/XViewController.m; sourceTree = "<group>"; };
 		6A7AD1EA1CB8BCDD007938FA /* XViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XViewController.xib; path = MainPageController/Controller/XViewController.xib; sourceTree = "<group>"; };
-		6A7AD1EE1CB8CE6D007938FA /* MobAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobAPI.framework; path = "Magnetic Wall/Libs/libraries/MobAPI.framework"; sourceTree = SOURCE_ROOT; };
+		6A7AD1EE1CB8CE6D007938FA /* MobAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobAPI.framework; sourceTree = "<group>"; };
 		6A7AD1EF1CB8CE6D007938FA /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		6A7AD1F21CB8CEA0007938FA /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		6A7AD1F41CB8CEAB007938FA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -257,7 +257,7 @@
 				6A1ECCEB1CE6210400AF0955 /* AssetsLibrary.framework in Frameworks */,
 				6A32E7C71CE05BEB00396452 /* SystemConfiguration.framework in Frameworks */,
 				6AF71A061CE040A600C586C1 /* MessageUI.framework in Frameworks */,
-				6A3DA76D1D64086A00DF0E02 /* MobAPI.framework in Frameworks */,
+				6A04CC941D656207009FDABB /* MobAPI.framework in Frameworks */,
 				6ADF79F61CBD449700C4D463 /* MOBFoundation.framework in Frameworks */,
 				6A7AD1F91CB8CEBA007938FA /* JavaScriptCore.framework in Frameworks */,
 				6A7AD1F71CB8CEB3007938FA /* libstdc++.tbd in Frameworks */,
@@ -737,7 +737,6 @@
 				6AC1D1151CC74FDA00BC9469 /* XCollectionViewCell.m in Sources */,
 				6AC1D1451CC7529300BC9469 /* UIImage+WebP.m in Sources */,
 				6A1AD2641CE37C040017E721 /* MJDIYHeader.m in Sources */,
-				6A7AD1E21CB8BB45007938FA /* AppDelegate.m in Sources */,
 				6A7AD22A1CB8D4B1007938FA /* MJRefreshComponent.m in Sources */,
 				6A4151521CDA4BB4004015B4 /* UIImage+ClipSubImage.m in Sources */,
 				6A1AD2771CE37C4F0017E721 /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
@@ -768,6 +767,7 @@
 				6A7AD2291CB8D4B1007938FA /* MJRefreshBackFooter.m in Sources */,
 				6AC1D13C1CC7529300BC9469 /* SDWebImageCompat.m in Sources */,
 				6AC1D13A1CC7529300BC9469 /* NSData+ImageContentType.m in Sources */,
+				6A04CC611D6551CD009FDABB /* AppDelegate.m in Sources */,
 				6A7AD1EB1CB8BCDD007938FA /* XViewController.m in Sources */,
 				6A4151581CDAE3E7004015B4 /* OptionViewCell.m in Sources */,
 				6A7AD2371CB8D4B1007938FA /* MJRefreshConst.m in Sources */,
@@ -1054,6 +1054,10 @@
 					Wall/Libs/libraries,
 					"$(PROJECT_DIR)/Magnetic",
 					Wall/Libs/libraries,
+					"$(PROJECT_DIR)/Magnetic",
+					Wall/Libs/libraries,
+					"$(PROJECT_DIR)/Magnetic",
+					Wall/Libs/libraries,
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Magnetic Wall/App Delegate/Magnetic Wall.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Magnetic Wall/Info.plist";
@@ -1132,6 +1136,10 @@
 					"$(PROJECT_DIR)/Fresh",
 					Wall/Libs/libraries,
 					"$(PROJECT_DIR)/Fresh",
+					Wall/Libs/libraries,
+					"$(PROJECT_DIR)/Magnetic",
+					Wall/Libs/libraries,
+					"$(PROJECT_DIR)/Magnetic",
 					Wall/Libs/libraries,
 					"$(PROJECT_DIR)/Magnetic",
 					Wall/Libs/libraries,

@@ -26,13 +26,13 @@
     
     //3Dtouch
     //提醒更新
-    UIApplicationShortcutItem * item = [[UIApplicationShortcutItem alloc]initWithType:@"notification" localizedTitle:@"提醒更新" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"notification"] userInfo:nil];
+//    UIApplicationShortcutItem * item = [[UIApplicationShortcutItem alloc]initWithType:@"notification" localizedTitle:@"提醒更新" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"notification"] userInfo:nil];
     //分享
     UIApplicationShortcutItem * itemTwo = [[UIApplicationShortcutItem alloc]initWithType:@"share" localizedTitle:@"分享" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"share"] userInfo:nil];
     //喜欢
     UIApplicationShortcutItem * itemThird = [[UIApplicationShortcutItem alloc]initWithType:@"love" localizedTitle:@"喜欢" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"favorite"] userInfo:nil];
     
-    [UIApplication sharedApplication].shortcutItems = @[item, itemTwo, itemThird];
+    [UIApplication sharedApplication].shortcutItems = @[itemTwo, itemThird];
 
     //初始化controller
     XViewController *viewController = [[XViewController alloc] initWithNibName:NSStringFromClass([XViewController class]) bundle:nil];
@@ -57,7 +57,6 @@
     //判断唯一标识
     //提醒更新
     if([shortcutItem.type isEqualToString:@"notification"]){
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://xcanoe.top"]];
     }
     //分享
     if ([shortcutItem.type isEqualToString:@"share"]) {

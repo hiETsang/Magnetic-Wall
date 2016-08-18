@@ -250,11 +250,9 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-
- #pragma mark - 3DTouch 
+#pragma mark - 3DTouch
 -(UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
 {
     DetailViewController *detailCtl = [[DetailViewController alloc] init];
@@ -262,6 +260,7 @@
     if (index == NULL) {
         return nil;
     } else {
+        [self.hud hideAnimated:YES];
         XCollectionViewCell *cell = (XCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:index];
         detailCtl.showImage = cell.backgroundImageView.image;
         NSString *imageUrl = [[NSString stringWithFormat:IMGNAME,(long) self.dataArrayM.count - 1 - index.row] componentsSeparatedByString:@"_"][0];
