@@ -22,7 +22,7 @@
 #define API_TABLE @"data"
 #define API_KEY @"images"
 
-#define IMGNUM @"85"
+#define IMGNUM @"90"
 #define IMGNAME @"http://7xsqrf.com2.z0.glb.clouddn.com/pic%ld.jpeg_thumbnails"
 
 #endif /* Fresh_Wall_pch */

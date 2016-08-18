@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A04CC611D6551CD009FDABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AD1DD1CB8BB45007938FA /* AppDelegate.m */; };
-		6A04CC941D656207009FDABB /* MobAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7AD1EE1CB8CE6D007938FA /* MobAPI.framework */; };
+		6A04CC961D659FCE009FDABB /* MobAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7AD1EE1CB8CE6D007938FA /* MobAPI.framework */; };
 		6A1AD2641CE37C040017E721 /* MJDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AD2631CE37C040017E721 /* MJDIYHeader.m */; };
 		6A1AD2761CE37C4F0017E721 /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AD2681CE37C4F0017E721 /* DGActivityIndicatorDoubleBounceAnimation.m */; };
 		6A1AD2771CE37C4F0017E721 /* DGActivityIndicatorFiveDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AD26A1CE37C4F0017E721 /* DGActivityIndicatorFiveDotsAnimation.m */; };
@@ -257,7 +257,7 @@
 				6A1ECCEB1CE6210400AF0955 /* AssetsLibrary.framework in Frameworks */,
 				6A32E7C71CE05BEB00396452 /* SystemConfiguration.framework in Frameworks */,
 				6AF71A061CE040A600C586C1 /* MessageUI.framework in Frameworks */,
-				6A04CC941D656207009FDABB /* MobAPI.framework in Frameworks */,
+				6A04CC961D659FCE009FDABB /* MobAPI.framework in Frameworks */,
 				6ADF79F61CBD449700C4D463 /* MOBFoundation.framework in Frameworks */,
 				6A7AD1F91CB8CEBA007938FA /* JavaScriptCore.framework in Frameworks */,
 				6A7AD1F71CB8CEB3007938FA /* libstdc++.tbd in Frameworks */,
@@ -1058,6 +1058,10 @@
 					Wall/Libs/libraries,
 					"$(PROJECT_DIR)/Magnetic",
 					Wall/Libs/libraries,
+					"$(PROJECT_DIR)/Magnetic",
+					Wall/Libs/libraries,
+					"$(PROJECT_DIR)/Magnetic",
+					Wall/Libs/libraries,
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Magnetic Wall/App Delegate/Magnetic Wall.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Magnetic Wall/Info.plist";
@@ -1136,6 +1140,10 @@
 					"$(PROJECT_DIR)/Fresh",
 					Wall/Libs/libraries,
 					"$(PROJECT_DIR)/Fresh",
+					Wall/Libs/libraries,
+					"$(PROJECT_DIR)/Magnetic",
+					Wall/Libs/libraries,
+					"$(PROJECT_DIR)/Magnetic",
 					Wall/Libs/libraries,
 					"$(PROJECT_DIR)/Magnetic",
 					Wall/Libs/libraries,
