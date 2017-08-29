@@ -357,13 +357,12 @@
 /** 分享朋友 */
 -(void)shareToFriends
 {
-    UIActivityViewController *activeViewController = [[UIActivityViewController alloc]initWithActivityItems:@[[UIImage imageNamed:@"mw@2x "],@"Magnetic Wall",[NSURL URLWithString:@"http://fir.im/dpn9"]] applicationActivities:nil];
+    UIActivityViewController *activeViewController = [[UIActivityViewController alloc]initWithActivityItems:@[@"Magnetic Wall",[NSURL URLWithString:@"http://fir.im/dpn9"]] applicationActivities:nil];
     //不显示哪些分享平台(具体支持那些平台，可以查看Xcode的api)
     activeViewController.excludedActivityTypes = @[UIActivityTypeAirDrop];
     [self presentViewController:activeViewController animated:YES completion:nil];
     //分享结果回调方法
     UIActivityViewControllerCompletionWithItemsHandler myblock = ^(NSString *activityType, BOOL completed, NSArray * returnedItems, NSError * activityError){
-        
     };
     activeViewController.completionWithItemsHandler = myblock;
 }

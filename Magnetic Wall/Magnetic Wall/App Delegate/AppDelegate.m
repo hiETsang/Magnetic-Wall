@@ -24,23 +24,24 @@
     //mob
     [MobAPI registerApp:@"127b6ae13968c"];
     
-    //3Dtouch
-    //提醒更新
-//    UIApplicationShortcutItem * item = [[UIApplicationShortcutItem alloc]initWithType:@"notification" localizedTitle:@"提醒更新" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"notification"] userInfo:nil];
     //分享
-    UIApplicationShortcutItem * itemTwo = [[UIApplicationShortcutItem alloc]initWithType:@"share" localizedTitle:@"分享" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"share"] userInfo:nil];
+    [OpenShare connectQQWithAppId:@"1103194207"];
+    [OpenShare connectWeiboWithAppKey:@"402180334"];
+    [OpenShare connectWeixinWithAppId:@"wxd930ea5d5a258f4f"];
+    [OpenShare connectRenrenWithAppId:@"228525" AndAppKey:@"1dd8cba4215d4d4ab96a49d3058c1d7f"];
+    
+    //3Dtouch
+    //催更
+    UIApplicationShortcutItem * item = [[UIApplicationShortcutItem alloc]initWithType:@"notification" localizedTitle:@"催更" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"notification"] userInfo:nil];
     //喜欢
     UIApplicationShortcutItem * itemThird = [[UIApplicationShortcutItem alloc]initWithType:@"love" localizedTitle:@"喜欢" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"favorite"] userInfo:nil];
-    
-    [UIApplication sharedApplication].shortcutItems = @[itemTwo, itemThird];
+    [UIApplication sharedApplication].shortcutItems = @[item, itemThird];
 
     //初始化controller
     XViewController *viewController = [[XViewController alloc] initWithNibName:NSStringFromClass([XViewController class]) bundle:nil];
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
-    
     [[UIApplication sharedApplication]setStatusBarHidden:YES];
     
     //启动画面
@@ -57,17 +58,7 @@
     //判断唯一标识
     //提醒更新
     if([shortcutItem.type isEqualToString:@"notification"]){
-    }
-    //分享
-    if ([shortcutItem.type isEqualToString:@"share"]) {
-        UIActivityViewController *activeViewController = [[UIActivityViewController alloc]initWithActivityItems:@[@"Magnetic Wall",[NSURL URLWithString:@"http://fir.im/dpn9"]] applicationActivities:nil];
-        //不显示哪些分享平台(具体支持那些平台，可以查看Xcode的api)
-        activeViewController.excludedActivityTypes = @[UIActivityTypeAirDrop];
-        [self.window.rootViewController presentViewController:activeViewController animated:YES completion:nil];
-        //分享结果回调方法
-        UIActivityViewControllerCompletionWithItemsHandler myblock = ^(NSString *activityType, BOOL completed, NSArray * returnedItems, NSError * activityError){
-        };
-        activeViewController.completionWithItemsHandler = myblock;
+        [OpenShare chatWithQQNumber:@"781276284"];
     }
     //喜欢
     if ([shortcutItem.type isEqualToString:@"love"]) {
@@ -78,6 +69,16 @@
         }];
         [alertController addAction:okAction];
         [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+    }
+}
+
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(nonnull id)annotation
+{
+    if ([OpenShare handleOpenURL:url]) {
+        return YES;
+    }else
+    {
+        return NO;
     }
 }
 
