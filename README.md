@@ -1,5 +1,6 @@
 # Magnetic-Wall
 ![image:462ECC61-8F6F-4B70-9870-DDBCC93E3A8C-264-000003D2E46EBB31/mw@2x .png](http://xcanoe.top/iOS/Magnetic-Wall/mw@2x%20.png)
+
 Magnetic Wall是我独立开发的一款简洁美观的壁纸app，界面设计仿照了[少数派](https://sspai.com)的一款app，壁纸每周更新，经由我从[Unsplash | Beautiful Free Photo Community](https://unsplash.com)上面仔细挑选适合手机和ipad的图片。
 
 Magnetic Wall不会有大量的图片供您选择，但会在保证质量的前提，保持一定的更新频率，让您偶尔进入这里，收获一点惊喜。
