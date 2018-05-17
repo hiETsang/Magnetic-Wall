@@ -716,7 +716,7 @@
 				TargetAttributes = {
 					6A7AD1BF1CB8AB65007938FA = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 5BYP9G3J9X;
+						DevelopmentTeam = W2JSHH2VCW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -951,7 +951,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kejie Yang (FV2NDS6868)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W2JSHH2VCW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fresh",
@@ -1138,7 +1138,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kejie Yang (FV2NDS6868)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W2JSHH2VCW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fresh",
