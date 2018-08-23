@@ -716,7 +716,7 @@
 				TargetAttributes = {
 					6A7AD1BF1CB8AB65007938FA = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = W2JSHH2VCW;
+						DevelopmentTeam = 5BYP9G3J9X;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -949,9 +949,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kejie Yang (FV2NDS6868)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = W2JSHH2VCW;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BYP9G3J9X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fresh",
@@ -1125,7 +1126,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = "canoe.Magnetic-Wall";
+				PRODUCT_BUNDLE_IDENTIFIER = "canoe.Magnetic-Wall.com";
 				PRODUCT_NAME = "Magnetic Wall";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1136,9 +1137,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kejie Yang (FV2NDS6868)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = W2JSHH2VCW;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BYP9G3J9X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fresh",
@@ -1311,7 +1313,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = "canoe.Magnetic-Wall";
+				PRODUCT_BUNDLE_IDENTIFIER = "canoe.Magnetic-Wall.com";
 				PRODUCT_NAME = "Magnetic Wall";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
